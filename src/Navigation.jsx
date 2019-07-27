@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -16,13 +15,13 @@ const StyledLinks = styled(Link)`
   padding: 10px 0;
 `;
 
-const Navigation = ({ year = '2019' }) => {
+const Navigation = () => {
   return (
     <NavUl>
-      <StyledLinks to='/'>Home</StyledLinks>
-      <StyledLinks to='budget'>Budget</StyledLinks>
-      <StyledLinks to='expense'>Expense</StyledLinks>
-      <StyledLinks to='category'>Category</StyledLinks>
+      <StyledLinks to="/">Home</StyledLinks>
+      <StyledLinks to="budget">Budget</StyledLinks>
+      <StyledLinks to="expense">Expense</StyledLinks>
+      <StyledLinks to="category">Category</StyledLinks>
     </NavUl>
   );
 };

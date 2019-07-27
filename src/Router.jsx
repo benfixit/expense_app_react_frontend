@@ -8,10 +8,10 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path='/' component={Budget} />
-        <Route path='/budget' component={Budget} />
-        <Route path='/expense' component={Expense} />
-        <Route path='/category' component={Category} />
+        <Route exact path="/" component={Budget} />
+        <Route path="/budget" component={Budget} />
+        <Route path="/expense" component={Expense} />
+        <Route path="/category" component={Category} />
       </Switch>
     </BrowserRouter>
   );

@@ -1,0 +1,28 @@
+{
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 10,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "import/prefer-default-export": "off"
+  }
+}

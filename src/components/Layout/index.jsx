@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Navigation from '../../Navigation';
+import './index.css';
 
 const LayoutContainer = styled.div`
   border: thin solid red;
@@ -35,6 +36,10 @@ const Layout = ({ children }) => {
       <Right>{children}</Right>
     </LayoutContainer>
   );
+};
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired
 };
 
 export default Layout;
